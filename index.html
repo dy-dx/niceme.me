@@ -27,7 +27,7 @@
     <audio id="audio" src="nicememe.mp3" type="audio/mpeg" preload="auto" autoplay>
     <script type="text/javascript">
       // autoplay is disabled on mobile web
-      document.addEventListener('touchstart', function handleTouch () {
+      document.addEventListener('touchend', function handleTouch () {
         document.getElementById('audio').play();
       });
     </script>
