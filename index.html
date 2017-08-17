@@ -24,7 +24,13 @@
   </head>
   <body>
     <h1>Nice meme!</h1>
-    <audio src="nicememe.mp3" type="audio/mpeg" preload="auto" autoplay>
+    <audio id="audio" src="nicememe.mp3" type="audio/mpeg" preload="auto" autoplay>
+    <script type="text/javascript">
+      // autoplay is disabled on mobile web
+      document.addEventListener('touchstart', function handleTouch () {
+        document.getElementById('audio').play();
+      });
+    </script>
   </body>
 </html>
 
